@@ -1,4 +1,5 @@
 <script>
+  import Navbar from "./Navbar.svelte";
   let players = [
     {
       name: "Bennie Duncan",
@@ -23,4 +24,5 @@
   ];
 </script>
 
+<Navbar />
 <div class="container" />
