@@ -1,6 +1,7 @@
 <script>
   import Navbar from "./Navbar.svelte";
   import Player from "./Player.svelte";
+  import AddPlayer from "./AddPlayer.svelte";
 
   let players = [
     {
@@ -28,6 +29,7 @@
 
 <Navbar />
 <div class="container">
+  <AddPlayer on:addplayer={addPlayer} />
   {#if players.length === 0}
     <p>No players</p>
   {:else}
